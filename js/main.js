@@ -13,10 +13,13 @@
 
 
 	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
+		// Cacheamos la altura para evitar lecturas repetidas
+		var windowHeight = $(window).height();
+		$('.js-fullheight').css('height', windowHeight);
+		
 		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+			windowHeight = $(window).height();
+			$('.js-fullheight').css('height', windowHeight);
 		});
 
 	};
@@ -277,4 +280,3 @@
 
 
 })(jQuery);
-
