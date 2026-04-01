@@ -1,0 +1,258 @@
+/* Mejoras responsive y rendimiento */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ftco-section {
+  padding: 5em 0;
+}
+
+.hero-wrap.hero-wrap-2,
+.hero-wrap.hero-wrap-2 .slider-text {
+  min-height: 420px;
+  height: auto;
+}
+
+.owl-carousel.home-slider,
+.owl-carousel.home-slider .slider-item,
+.owl-carousel.home-slider .slider-text {
+  min-height: 100vh;
+  height: auto;
+}
+
+.owl-carousel.home-slider .slider-item {
+  background-position: center center !important;
+}
+
+.owl-carousel.home-slider .slider-item .slider-text h1 {
+  font-size: clamp(48px, 10vw, 120px);
+  margin-bottom: 24px;
+}
+
+.wrap {
+  position: relative;
+}
+
+.ftco-navbar-light .container {
+  width: 100%;
+  max-width: 1110px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.staff .img {
+  background-position: center top;
+}
+
+.img-2 {
+  min-height: 320px;
+  height: auto;
+}
+
+#ftco-loader {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .ftco-animate {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .ftco-section {
+    padding: 4em 0;
+  }
+
+  .wrap {
+    display: none;
+  }
+
+  .ftco-navbar-light {
+    padding: 12px 0;
+  }
+
+  .ftco-navbar-light .navbar-brand {
+    font-size: 24px;
+  }
+
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 14px;
+  }
+
+  .owl-carousel.home-slider,
+  .owl-carousel.home-slider .slider-item,
+  .owl-carousel.home-slider .slider-text {
+    min-height: 80vh;
+  }
+
+  .hero-wrap.hero-wrap-2,
+  .hero-wrap.hero-wrap-2 .slider-text {
+    min-height: 360px;
+  }
+
+  .makereservation {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .menu-wrap {
+    padding: 2em 1em 0.5em 1em;
+  }
+
+  .staff .img {
+    height: 300px;
+  }
+
+  .ftco-footer {
+    padding-top: 4em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ftco-section {
+    padding: 3em 0;
+  }
+
+  .heading-section .subheading {
+    font-size: 32px;
+    margin-bottom: -12px;
+  }
+
+  .heading-section h2,
+  .heading-section.heading-section-white h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero-wrap .slider-text p,
+  .hero-wrap.hero-wrap-2 .slider-text h1,
+  .owl-carousel.home-slider .slider-item .slider-text .subheading,
+  .owl-carousel.home-slider .slider-item .slider-text .subheading-2 {
+    text-align: center;
+  }
+
+  .owl-carousel.home-slider,
+  .owl-carousel.home-slider .slider-item,
+  .owl-carousel.home-slider .slider-text {
+    min-height: 720px;
+  }
+
+  .hero-wrap.hero-wrap-2,
+  .hero-wrap.hero-wrap-2 .slider-text {
+    min-height: 320px;
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text h1 {
+    font-size: clamp(42px, 14vw, 72px);
+  }
+
+  .owl-carousel.home-slider .slider-item .slider-text .subheading,
+  .owl-carousel.home-slider .slider-item .slider-text .subheading-2 {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .owl-carousel.home-slider .owl-dots {
+    bottom: 20px;
+  }
+
+  .img-2,
+  .about-image {
+    min-height: 260px;
+  }
+
+  .menus {
+    align-items: flex-start !important;
+  }
+
+  .menus .menu-img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .menus .text {
+    width: calc(100% - 64px);
+    padding-left: 14px;
+  }
+
+  .menus .text .one-half {
+    width: calc(100% - 60px);
+  }
+
+  .menus .text .one-half h3 {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .menus .text .one-forth {
+    width: 60px;
+  }
+
+  .menus .text .one-forth .price {
+    font-size: 17px;
+  }
+
+  .testimony-wrap p {
+    font-size: 17px;
+  }
+
+  .block-27 ul li a,
+  .block-27 ul li span {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+
+  .ftco-footer .ftco-footer-widget {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container,
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .btn,
+  .form-control {
+    min-height: 48px;
+  }
+
+  .appointment-form .form-control,
+  .subscribe-form .form-group .submit {
+    height: 48px !important;
+  }
+
+  .staff .img {
+    height: 260px;
+  }
+
+  .ftco-footer-social li a {
+    width: 36px;
+    height: 36px;
+  }
+}
